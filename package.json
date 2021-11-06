@@ -9,7 +9,7 @@
     "install-client":"cd portfolio && npm install",
     "start": "node index.js",
     "client":"cd portfolio && npm start",
-    "heroku-postbuild": "npm run install-client && npm run build"
+    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
   },
   "author": "Abhay Singh",
   "license": "MIT",
