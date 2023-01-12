@@ -5,10 +5,10 @@ const {google} = require('googleapis')
 const cors = require('cors')
 
 const app =express()
-const CLIENT_ID ='1053453804933-sanrc6rt03f6jtp2m3l1dm9db6nlh4qa.apps.googleusercontent.com'
-const CLIENT_SECRET = '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'
-const REDIRECT_URI ='https://developers.google.com/oauthplayground'
-const REFRESH_TOKEN = '1//04A2-bIgovcEzCgYIARAAGAQSNwF-L9IrrMSqTUTXKA0Eg_ZI3Nj6komKm6hTbEAK_omibVqxPHEKOu0jjirtpy-2yFYs5Y3bBSE' 
+const CLIENT_ID =''
+const CLIENT_SECRET = ''
+const REDIRECT_URI =''
+const REFRESH_TOKEN = '' 
 
 const oAuth2Client = new google.auth.OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI)
 oAuth2Client.setCredentials({refresh_token:REFRESH_TOKEN})
