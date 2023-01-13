@@ -11,6 +11,9 @@
     "client":"cd portfolio && npm start",
     "heroku-postbuild": "npm install --prefix portfolio && npm run build --prefix portfolio"
   },
+  "engines": {
+  "node": "16.x"
+},
   "author": "Abhay Singh",
   "license": "MIT",
   "dependencies": {
