@@ -8,7 +8,7 @@
     "build":"npm install --prefix portfolio && npm run build --prefix portfolio",
     "install-client":"cd portfolio && npm install",
     "start": "node index.js",
-    "client":"cd portfolio && npm start",
+    "client":"cd portfolio && npm start"
   },
   "engines": {
   "node": "16.x"
