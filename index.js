@@ -60,9 +60,9 @@ app.post('/aboutme/forms', (req,res)=>{
 const PORT = process.env.PORT || 3001;
 
 if(process.env.NODE_ENV == "production"){
-    app.use(express.static("portfolio/public"));
+    app.use(express.static("portfolio/build"));
     app.get("*", (req, res) => {
-        res.sendFile(path.resolve(__dirname,"portfolio/public", "index.html"));
+        res.sendFile(path.resolve(__dirname,"portfolio/build", "index.html"));
       })
 }
 
