@@ -2,7 +2,7 @@
   "rewrites" :[
     {
     "source":"/",
-    "destination": "/portfolio/"
+    "destination": "/public/index.html"
     }
     ]
 }
