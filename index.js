@@ -66,14 +66,14 @@ app.get("/api/test", (req, res) => {
 
    app.use(express.static(path.join(__dirname, "./portfolio/public")));
     app.get("*", (_, res) => {
-//         res.sendFile(path.resolve(__dirname,"portfolio/build", "index.html"));
-            res.sendFile(path.join(__dirname, "./portfolio/public/index.html"),
-                    function (err) {
-                      if (err) {
-                        res.send(err);
-                      }
-                    }
-  );
+        res.sendFile(path.resolve(__dirname,"portfolio/build", "index.html"));
+//             res.sendFile(path.join(__dirname, "./portfolio/public/index.html"),
+//                     function (err) {
+//                       if (err) {
+//                         res.send(err);
+//                       }
+//                     }
+//   );
       })
 
 
