@@ -57,7 +57,7 @@ const app =express()
 //     smtpTransport.close();
 // })
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 
 
 if(process.env.NODE_ENV == "production"){
