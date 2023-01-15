@@ -4,11 +4,7 @@
   "description": "Node ka mailer",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"npm install --prefix portfolio && npm run build --prefix portfolio",
-    "install-client":"cd portfolio && npm install",
-    "start": "nodemon index.js",
-    "client":"cd portfolio && npm start"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
   "node": "16.x"
