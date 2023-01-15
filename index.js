@@ -20,7 +20,7 @@ app.use(cors())
 app.get('/api/forms', (req,res)=>{
     res.send('Hello worldu')
 })
-const accessToken = oAuth2Client.getAccessToken()
+// const accessToken = oAuth2Client.getAccessToken()
 app.post('/aboutme/forms', (req,res)=>{
     let data = req.body;
     console.log('getting inside')
