@@ -60,7 +60,9 @@ const app =express()
 
 const PORT =  5000;
 
-
+app.get("/api/test", (req, res) => {
+  res.send("test");
+});
 
    app.use(express.static(path.join(__dirname, "./portfolio/public")));
     app.get("*", (_, res) => {
