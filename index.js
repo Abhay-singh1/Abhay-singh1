@@ -57,10 +57,10 @@ const app =express()
 //     smtpTransport.close();
 // })
 
-const PORT = 5000;
+const PORT =  5000;
 
 
-if(process.env.NODE_ENV == "production"){
+
     app.use(express.static("portfolio/build"));
     app.get("*", (req, res) => {
 //         res.sendFile(path.resolve(__dirname,"portfolio/build", "index.html"));
@@ -72,7 +72,7 @@ if(process.env.NODE_ENV == "production"){
                     }
   );
       })
-}
+
 
 
 app.listen(PORT, ()=>{
