@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import React, {useState} from 'react'
-import axios from 'axios'
+// import axios from 'axios'
 const FormDiv = styled.div`
     display:block;
     box-sizing:border-box
@@ -108,14 +108,14 @@ function EmailForm (){
         }
        
         console.log('going to post',data)
-        axios.post('/aboutme/forms',data).then(()=>{
-            console.log('posting....')
-            setSent(true)
+//         axios.post('/aboutme/forms',data).then(()=>{
+//             console.log('posting....')
+//             setSent(true)
             
-        }).catch((err)=>{
+//         }).catch((err)=>{
 
-            console.log(err,'Message could not be delivered!!!');
-        })
+//             console.log(err,'Message could not be delivered!!!');
+//         })
         
     }
     const resetForm = ()=>{
