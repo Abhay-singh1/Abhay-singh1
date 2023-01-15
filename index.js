@@ -63,7 +63,7 @@ const PORT =  5000;
 
 
    app.use(express.static(path.join(__dirname, "./portfolio/public")));
-    app.get("*", (req, res) => {
+    app.get("*", (_, res) => {
 //         res.sendFile(path.resolve(__dirname,"portfolio/build", "index.html"));
             res.sendFile(path.join(__dirname, "./portfolio/public/index.html"),
                     function (err) {
