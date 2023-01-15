@@ -65,7 +65,7 @@ const PORT =  5000;
    app.use(express.static("portfolio/build"));
     app.get("*", (req, res) => {
 //         res.sendFile(path.resolve(__dirname,"portfolio/build", "index.html"));
-            res.sendFile(path.join(__dirname, "./frontend/portfolio/build/index.html"),
+            res.sendFile(path.join(__dirname, "./frontend/portfolio/public/index.html"),
                     function (err) {
                       if (err) {
                         res.send(err);
