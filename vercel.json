@@ -16,4 +16,5 @@
       "source":"/(.*)",
       "destination": "/index.js"
     }
+    ]
 }
